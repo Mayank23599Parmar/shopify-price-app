@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "regional-account-app"
+client_id = "e18fd2bf40fbbe0aa182b2d67afcf74c"
+application_url = "https://obviously-uw-infections-petite.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://obviously-uw-infections-petite.trycloudflare.com/auth/callback",
+  "https://obviously-uw-infections-petite.trycloudflare.com/auth/shopify/callback",
+  "https://obviously-uw-infections-petite.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "mayankparmare23599.myshopify.com"
